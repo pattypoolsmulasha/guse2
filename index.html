@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<!-- Header -->
+<header>
+    <nav class="navbar">
+        <div class="logo">EcoGlow</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#shop">Shop</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+            <input type="text" placeholder="Search..." class="search-bar">
+            <a href="#cart" class="cart-icon">🛒</a>
+            <a href="#login" class="login-btn">Login</a>
+        </div>
+    </nav>
+</header>
+
+<!-- Hero Section -->
+<section id="home" class="hero">
+    <div class="hero-content">
+        <h1>Natural Skincare for a Greener Tomorrow</h1>
+        <p>Discover our eco-friendly, cruelty-free skincare essentials.</p>
+        <a href="#shop" class="cta-btn">Shop Now</a>
+    </div>
+</section>
+
+<!-- Product Filters & Listing -->
+<section id="shop" class="products-section">
+    <aside class="filters">
+        <h3>Filter By</h3>
+        <div>
+            <label>Category</label>
+            <select>
+                <option>All</option>
+                <option>Face</option>
+                <option>Body</option>
+                <option>Hair</option>
+            </select>
+        </div>
+        <div>
+            <label>Price</label>
+            <input type="range" min="10" max="100" value="50">
+        </div>
+    </aside>
+    <div class="product-list">
+        <!-- Example Product Card -->
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Eco Face Cream">
+            <h4>Eco Face Cream</h4>
+            <p>$29.99</p>
+            <a href="#product1" class="details-btn">View Details</a>
+        </div>
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=400&q=80" alt="Natural Body Lotion">
+            <h4>Natural Body Lotion</h4>
+            <p>$19.99</p>
+            <a href="#product2" class="details-btn">View Details</a>
+        </div>
+        <!-- Add more product cards as needed -->
+    </div>
+</section>
+
+<!-- Product Detail Modal (Example) -->
+<div id="product1" class="modal">
+    <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Eco Face Cream">
+        <h2>Eco Face Cream</h2>
+        <p>Hydrate your skin naturally with our eco-friendly face cream.</p>
+        <div class="reviews">
+            <h4>Customer Reviews</h4>
+            <div class="review">
+                <strong>Jane D.</strong> <span>★★★★★</span>
+                <p>Love how gentle this is on my skin!</p>
+            </div>
+        </div>
+        <button class="add-to-cart-btn">Add to Cart</button>
+    </div>
+</div>
+
+<!-- Shopping Cart (Simplified) -->
+<div id="cart" class="cart-modal">
+    <div class="cart-content">
+        <span class="close-btn">&times;</span>
+        <h3>Your Cart</h3>
+        <div class="cart-items">
+            <div class="cart-item">
+                <span>Eco Face Cream</span>
+                <span>$29.99</span>
+                <button class="remove-btn">Remove</button>
+            </div>
+        </div>
+        <button class="checkout-btn">Checkout</button>
+    </div>
+</div>
+
+<!-- About Us -->
+<section id="about" class="about-section">
+    <h2>About EcoGlow</h2>
+    <p>EcoGlow is committed to providing sustainable, natural skincare products that are kind to your skin and the planet. Our mission is to make beauty routines greener and more ethical.</p>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="contact-section">
+    <h2>Contact Us</h2>
+    <form class="contact-form">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+    <div class="contact-info">
+        <p>Email: support@ecoglow.com</p>
+        <p>Follow us:
+            <a href="#" aria-label="Instagram">Instagram</a> |
+            <a href="#" aria-label="Facebook">Facebook</a> |
+            <a href="#" aria-label="Twitter">Twitter</a>
+        </p>
+    </div>
+</section>
+
+<!-- Newsletter Signup -->
+<section class="newsletter-section">
+    <h3>Stay Updated</h3>
+    <form class="newsletter-form">
+        <input type="email" placeholder="Enter your email" required>
+        <button type="submit">Subscribe</button>
+    </form>
+</section>
+
+<!-- Live Chat Support (Placeholder) -->
+<div class="live-chat">
+    <button class="chat-btn">💬 Chat with us</button>
+</div>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2024 EcoGlow. All rights reserved.</p>
+</footer>
+ <script src="index.js"></script>
+</body>
+</html>
